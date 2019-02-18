@@ -1,0 +1,33 @@
+{
+  "name": "ciphergame",
+  "version": "0.1.0",
+  "scripts": {
+    "clean": "bsb -clean-world && rm -r ./lib",
+    "reason": "bsb -make-world",
+    "bundle": "rollup --config rollup.config.js",
+    "watch:reason": "bsb -make-world -w",
+    "watch:bundle": "rollup --watch --config rollup.config.js",
+    "watch": "npm-run-all --parallel watch:reason watch:bundle",
+    "dev": "npm run reason && npm run watch"
+  },
+  "keywords": [
+    "Cipher",
+    "Game",
+    "Cryptography",
+    "Quotes",
+    "BuckleScript"
+  ],
+  "author": "Michael Martin-Smucker",
+  "license": "MIT",
+  "devDependencies": {
+    "bs-platform": "^4.0.18",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^1.2.1",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-replace": "^2.1.0"
+  },
+  "dependencies": {
+    "reason-react": "^0.5.3"
+  }
+}
