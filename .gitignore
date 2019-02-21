@@ -8,6 +8,7 @@ npm-debug.log
 **/*.bs.js
 /lib/bs/
 /dist/
+/.cache/
 
 # IDE support
 /.vscode/
